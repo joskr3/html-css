@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  color: black;
+}
+
+p,
+h1,
+h3,
+li {
+  background: yellow;
+
+}
+
+#subtitulo {
+  color: red;
+}
+
+.noOrdenado {
+  border: 1px solid black;
+}
+
+footer {
+  color: red;
+  font-size: 24px;
+  background: white;
+}
+
+button {
+  border: 1px solid salmon;
+  height: 300px;
+  width: 200px;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: blue;
+  color: white
+}
+
+button:active {
+  background: yellow;
+  color: black;
+}
+
+
+/* CSS */
+/* 1. Cambiar el color de la etiqueta cuando se selecciona la casilla de verificación */
+#check1:checked+label {
+  color: red;
+}
+
+/* 2. Cambiar el color de fondo de la etiqueta cuando se selecciona la casilla de verificación */
+#check2:checked+label {
+  background-color: yellow;
+}
+
+/* 3. Cambiar el tamaño de la fuente de la etiqueta cuando se selecciona la casilla de verificación */
+#check3:checked+label {
+  font-size: 20px;
+}
+
+/* 4. Cambiar el estilo de la fuente de la etiqueta cuando se selecciona la casilla de verificación */
+#check4:checked+label {
+  font-style: italic;
+}
+
+/* 5. Cambiar el peso de la fuente de la etiqueta cuando se selecciona la casilla de verificación */
+#check5:checked+label {
+  font-weight: bold;
+}
+
+#miTexto {
+  padding: 24px;
+  margin: 16px;
+}
+
+#miTexto::first-letter {
+  font-size: 32px;
+}
+
+#miTexto::after {
+  content: "@@@@@";
+}
+
+
+#miTexto::before {
+  content: "Aaa";
+}
+
+#miTexto::selection {
+  background: salmon;
+}
+
+#miTexto::first-line {
+  background: yellow;
+  color: black;
+  padding: 12px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid black;
+  padding: 25px;
+  margin: 12px;
+}
+
+
+#miSeccion {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  background: yellow;
+  padding: 24px;
+  justify-content: space-evenly;
+  margin-bottom: 24px;
+}
+
+
+
+#miSeccion2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: teal;
+  padding: 24px;
+  gap: 48px;
+}
+
+#miSeccion2>div {
+  height: 400px;
+}
+
+#miSeccion>div {
+  align-items: start;
+  height: 500px;
+}
+
+.seccionVerde {
+  display: flex;
+  height: 700px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: yellowgreen;
+  padding: 12px;
+}
+
+.primerHijoSeccionVerde {
+  align-items: start;
+}
+
+.seccionRojo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 12px;
+  background: red;
+  padding: 12px;
+}
+
+.seccionRojo>p {
+  height: 300px;
+}
+
+.seccionSalmon {
+  display: flex;
+  width: 900px;
+  gap: 12px;
+  background: salmon;
+  padding: 12px;
+  justify-content: center;
+}
+
+.primerContenedor {
+  width: 100px;
+}
+
+.seccionSalmon:first-child {
+  width: 100px;
+}
+
+.seccionVerde2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: yellowgreen;
+  padding: 12px;
+}
+
+.seccionRojo2 {
+  gap: 12px;
+  background: red;
+  padding: 12px;
+}
+
+.seccionSalmon2 {
+  display: flex;
+  gap: 12px;
+  background: salmon;
+  padding: 12px;
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  margin-left: 48px;
+  padding: 12px;
+  border: 10px solid salmon;
+  background: aliceblue;
+}
+
+.caja2 {
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  margin-left: 48px;
+  padding: 12px;
+  border: 10px solid blue;
+  background: aliceblue;
+}
